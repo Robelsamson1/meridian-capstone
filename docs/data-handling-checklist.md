@@ -99,12 +99,5 @@ against whatever Dana/counsel specify directly.*
 
 ## Open questions for Dana
 
-The brief authorizes only two data types for AI-tool use (sales totals by
-store/week, and store attributes). Everything else below is Restricted for
-AI-tool use on our end until you tell us otherwise — we are not assuming
-that aggregation or removing identifiers changes that.
-
-- **Raw (unaggregated) POS transaction records** — is this Restricted or Open for AI-tool use?
-- **Aggregated/store-level labor data** (e.g., total scheduled hours per store per week, without employee names) — the brief restricts "labor schedules." Does an aggregated, store-level view count as Open, or is it still Restricted?
-- **Aggregated loyalty program data** (e.g., average spend per segment, membership counts by store) — the brief restricts "loyalty program data." Does aggregation change that, or is it still Restricted?
-- **Storage, access, and disposal/retention terms** — the brief says the NDA covers this; once we've reviewed it, we'll confirm our practices match, but wanted to flag we'll be asking.
+Tracked in the research wiki: see
+[wiki/analyses/open-questions.md](../wiki/analyses/open-questions.md).
