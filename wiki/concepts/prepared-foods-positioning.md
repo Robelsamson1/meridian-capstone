@@ -15,6 +15,13 @@ prepared foods is a named category worth tracking specifically, since it's
 part of how Meridian describes its own competitive edge, not just another
 line item.
 
+## Industry context
+
+A 2026 industry survey found consumers shifting dining occasions toward
+grocery and convenience stores and away from fast food/fast-casual, and
+specialty grocers (Meridian's category) are outperforming conventional
+chains nationally. See [[concepts/grocery-industry-trends]].
+
 ## Open questions
 
 The brief doesn't say how large prepared foods is as a share of revenue,

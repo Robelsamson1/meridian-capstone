@@ -27,6 +27,13 @@ Store attributes (square footage, opening date, lease terms) are
 classified **Open** for AI-tool use per the client brief, unlike most other
 data types. See `docs/data-handling-checklist.md`.
 
+## Industry context
+
+Grocery-anchored real estate investment surged in 2025 (~$11B in deals, up
+42% YoY), and national/regional players (Aldi, Gelson's) are actively
+building smaller-footprint formats similar to Meridian's own approach. See
+[[concepts/grocery-industry-trends]].
+
 ## Open questions
 
 See [[analyses/open-questions]] and [[analyses/interview-prep]].

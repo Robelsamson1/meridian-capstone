@@ -2,7 +2,8 @@
 
 Source: [[entities/dana-okafor]], [[entities/meridian-markets]],
 [[concepts/store-expansion-strategy]], [[concepts/prepared-foods-positioning]],
-[[concepts/loyalty-program]], [[analyses/open-questions]]
+[[concepts/loyalty-program]], [[concepts/grocery-industry-trends]],
+[[analyses/open-questions]]
 
 Ready-to-use agenda for the stakeholder interview with Dana Okafor, VP of
 Operations.
@@ -57,7 +58,15 @@ Operations.
 - Beyond revenue/costs/customer experience, are there other success
   metrics leadership is tracking?
 
-### 7. Data handling / NDA
+### 7. Industry context
+
+- Specialty grocers are outperforming nationally and larger chains (Aldi,
+  Gelson's) are investing in smaller-footprint formats similar to
+  Meridian's own — does Dana see this as validation of Meridian's
+  positioning, or new competitive pressure? See
+  [[concepts/grocery-industry-trends]].
+
+### 8. Data handling / NDA
 
 - What's the current status of the NDA?
 - Confirm the data-classification open questions in

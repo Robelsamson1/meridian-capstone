@@ -37,3 +37,7 @@ Source: [[sources/client-brief]], [[concepts/store-expansion-strategy]],
   Marcus (IT) to pull the data extract?
 - Is prepared foods tracked as its own category in the POS system, or
   would that require additional mapping?
+- Specialty grocers are outperforming nationally and larger chains are
+  investing in smaller-footprint formats similar to Meridian's own (see
+  [[concepts/grocery-industry-trends]]) — does Dana see this as a tailwind
+  Meridian is capturing, or new competitive pressure on its differentiation?

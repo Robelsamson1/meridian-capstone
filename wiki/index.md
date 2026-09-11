@@ -9,6 +9,9 @@ spec.
 - [[sources/client-brief]] — Dana Okafor's engagement kickoff email:
   company overview, requested dashboard, data available, data-handling
   terms, timeline.
+- [[sources/icsc-grocery-formats-2026]] — ICSC trade article on grocery
+  sector stratification, specialty-grocer outperformance, small-format
+  innovation, and 2025 grocery-anchored real estate investment.
 
 ## entities/
 
@@ -25,6 +28,9 @@ spec.
   Restricted data-handling status.
 - [[concepts/store-expansion-strategy]] — Meridian's lease-takeover growth
   history and the Pasadena decision.
+- [[concepts/grocery-industry-trends]] — 2026 industry context: specialty
+  grocers outperforming nationally, small-format innovation, and surging
+  grocery-anchored real estate investment.
 
 ## analyses/
 
