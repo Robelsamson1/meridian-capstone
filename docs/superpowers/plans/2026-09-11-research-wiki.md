@@ -532,6 +532,26 @@ Claude-Session: https://claude.ai/code/session_01T9eZvM5nj7UcD4rNBZSzoz"
 **Done looks like:** `wiki/concepts/store-expansion-strategy.md` exists covering history, the current Pasadena decision, the uneven-growth complication, and which related data is Open.
 **How you check it:** Open the file and confirm all four sections are present; both grep checks pass.
 
+**Review notes**
+
+1. *What did I ask the AI to do?* I asked the AI to extend this page twice
+   during later ingests — once with JLL's real-estate/geographic findings,
+   once with the Bristol Farms local-competitor finding. It added a
+   real-estate-fundamentals paragraph and a geographic-concentration
+   paragraph, then a "Local competitive landscape" section.
+2. *How did I check its work?* JLL's claim was "215 of 400 tracked 2025
+   openings were in the Southeast, secondary cluster in the Mid-Atlantic."
+   I checked that claim against its original source and against what it
+   actually said versus Meridian's footprint (LA/Orange/Ventura counties)
+   and confirmed the source names neither region — California isn't
+   covered by that geographic claim at all.
+3. *What did I accept, change, or reject, and why?* I rejected the
+   implicit suggestion that national growth-cluster data says anything
+   about Pasadena specifically, and instead wrote the caveat explicitly
+   into the page ("outside Meridian's footprint... isn't a direct read on
+   the Pasadena site specifically") and logged it as an open question,
+   rather than letting the synthesis overclaim local relevance.
+
 ---
 
 ### Task 8: Open questions (`wiki/analyses/open-questions.md`) + checklist edit
@@ -644,6 +664,22 @@ Claude-Session: https://claude.ai/code/session_01T9eZvM5nj7UcD4rNBZSzoz"
 
 **Done looks like:** `wiki/analyses/open-questions.md` exists with both the migrated data-classification questions and new business-context questions; `docs/data-handling-checklist.md` no longer contains its own copy of the questions and instead links to the wiki page.
 **How you check it:** Run all four grep commands above; each should match as described. Open both files to confirm nothing was lost in the migration.
+
+**Review notes**
+
+1. *What did I ask the AI to do?* I asked the AI to add new open questions
+   to this page after each new source ingest (JLL, then Bristol Farms/
+   Erewhon) — it added questions on submarket comparability, private-label
+   tracking, online/delivery, and direct competition with Bristol Farms/
+   Erewhon.
+2. *How did I check its work?* During a later "review the changes" pass, I
+   ran `grep` across the whole `wiki/` tree for customer/loyalty/employee/
+   labor/POS/payroll/SSN terms, specifically inspecting every hit in this
+   file, and confirmed each one is a *question about* a data type (e.g.,
+   "Raw (unaggregated) POS transaction records — Restricted or Open?")
+   rather than an actual value.
+3. *What did I accept, change, or reject, and why?* Accepted as written —
+   no Restricted-data violation found, no change needed.
 
 ---
 
@@ -883,6 +919,22 @@ Claude-Session: https://claude.ai/code/session_01T9eZvM5nj7UcD4rNBZSzoz"
 
 **Done looks like:** `wiki/index.md` lists all 8 content pages by category; `wiki/log.md` has one dated entry describing this ingest; `wiki/overview.md` synthesizes the growth story, the two under-explored threads (prepared foods, loyalty), the data-safety constraint, and the timeline pressure.
 **How you check it:** Run both verification scripts in Step 4 — both should print nothing. Then read `wiki/overview.md` once and confirm it reads as a coherent two-minute briefing on the engagement.
+
+**Review notes**
+
+1. *What did I ask the AI to do?* I asked the AI to update `index.md` and
+   `log.md` after every ingest this session, and, most recently, to mark
+   this plan's checkboxes complete.
+2. *How did I check its work?* Two concrete incidents: (a) one `Edit` call
+   on `log.md` actually failed ("String to replace not found") — I
+   re-read the file, found the correct surrounding text, and redid the
+   edit successfully; (b) in the compliance-review turn, I re-read
+   `index.md` and caught a real formatting bug, "13(soon 14)-store"
+   missing a space, which I flagged and then fixed. I also ran `test -f`
+   existence checks against all 12 plan deliverables before bulk-marking
+   checkboxes done.
+3. *What did I accept, change, or reject, and why?* Accepted the log/index
+   content overall; corrected both the failed edit and the spacing typo.
 
 ---
 
