@@ -22,6 +22,16 @@ grocery and convenience stores and away from fast food/fast-casual, and
 specialty grocers (Meridian's category) are outperforming conventional
 chains nationally. See [[concepts/grocery-industry-trends]].
 
+## Local competitive comparison
+
+[[entities/bristol-farms]] — a similarly-sized LA specialty grocer — is
+explicitly positioned in local coverage as competing on the same prepared
+foods/scratch-kitchen terms Meridian uses, priced below
+[[entities/erewhon]]'s premium/celebrity-branded end of the market. This
+gives a rough sense of where a prepared-foods-led specialty grocer sits on
+price relative to at least one premium local competitor, though no source
+places Meridian's own pricing on that spectrum yet.
+
 ## Open questions
 
 The brief doesn't say how large prepared foods is as a share of revenue,

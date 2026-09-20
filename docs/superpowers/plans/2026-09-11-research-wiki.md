@@ -31,7 +31,7 @@
 **Interfaces:**
 - Produces: the schema/conventions doc every later task and every future session reads first. No dependency on other tasks.
 
-- [ ] **Step 1: Write `CLAUDE.md`**
+- [x] **Step 1: Write `CLAUDE.md`**
 
 ```markdown
 # Meridian Capstone — Wiki Schema
@@ -101,7 +101,7 @@ A source in `raw/` with no corresponding `wiki/sources/*.md` page is
 "pending ingest" — this is a computed state, not tracked separately.
 ```
 
-- [ ] **Step 2: Verify required sections are present**
+- [x] **Step 2: Verify required sections are present**
 
 Run: `grep -c "^## " CLAUDE.md`
 Expected: `6` (Layers, Directory structure, Page conventions, Data-safety rule, Ingest workflow, plus one — confirm the count matches the number of `##` headings actually written; re-check by eye if the count differs, since heading wording may shift slightly during authoring)
@@ -109,7 +109,7 @@ Expected: `6` (Layers, Directory structure, Page conventions, Data-safety rule, 
 Run: `grep -n "Restricted" CLAUDE.md`
 Expected: at least one match, confirming the data-safety rule is present.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add CLAUDE.md
@@ -133,7 +133,7 @@ Claude-Session: https://claude.ai/code/session_01T9eZvM5nj7UcD4rNBZSzoz"
 - Consumes: `raw/client-brief.md` (already in repo).
 - Produces: `[[sources/client-brief]]`, the citation target every entity/concept page in this plan links back to.
 
-- [ ] **Step 1: Write `wiki/sources/client-brief.md`**
+- [x] **Step 1: Write `wiki/sources/client-brief.md`**
 
 ```markdown
 # Client brief: Meridian Markets
@@ -178,7 +178,7 @@ preliminary board presentation due in three weeks.
 - Contact: [[entities/dana-okafor]].
 ```
 
-- [ ] **Step 2: Verify citation and wikilinks are present**
+- [x] **Step 2: Verify citation and wikilinks are present**
 
 Run: `grep -n "^Source:" wiki/sources/client-brief.md`
 Expected: one match, `Source: \`raw/client-brief.md\`...`
@@ -186,7 +186,7 @@ Expected: one match, `Source: \`raw/client-brief.md\`...`
 Run: `grep -oE '\[\[[a-z/-]+\]\]' wiki/sources/client-brief.md | sort -u`
 Expected output includes: `[[concepts/loyalty-program]]`, `[[concepts/prepared-foods-positioning]]`, `[[concepts/store-expansion-strategy]]`, `[[entities/dana-okafor]]`, `[[entities/meridian-markets]]`
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add wiki/sources/client-brief.md
@@ -210,7 +210,7 @@ Claude-Session: https://claude.ai/code/session_01T9eZvM5nj7UcD4rNBZSzoz"
 - Consumes: `[[sources/client-brief]]` (Task 2).
 - Produces: `[[entities/dana-okafor]]`, referenced by Tasks 8 and 9.
 
-- [ ] **Step 1: Write `wiki/entities/dana-okafor.md`**
+- [x] **Step 1: Write `wiki/entities/dana-okafor.md`**
 
 ```markdown
 # Dana Okafor
@@ -248,7 +248,7 @@ brief that starts this engagement (August 2026).
 See [[analyses/open-questions]] and [[analyses/interview-prep]].
 ```
 
-- [ ] **Step 2: Verify citation and wikilinks are present**
+- [x] **Step 2: Verify citation and wikilinks are present**
 
 Run: `grep -n "^Source:" wiki/entities/dana-okafor.md`
 Expected: `Source: [[sources/client-brief]]`
@@ -256,7 +256,7 @@ Expected: `Source: [[sources/client-brief]]`
 Run: `grep -c '\[\[' wiki/entities/dana-okafor.md`
 Expected: `5` or more (links to meridian-markets, store-expansion-strategy, loyalty-program, open-questions, interview-prep)
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add wiki/entities/dana-okafor.md
@@ -280,7 +280,7 @@ Claude-Session: https://claude.ai/code/session_01T9eZvM5nj7UcD4rNBZSzoz"
 - Consumes: `[[sources/client-brief]]` (Task 2).
 - Produces: `[[entities/meridian-markets]]`, referenced by Tasks 2, 3, 5, 6, 7, 9.
 
-- [ ] **Step 1: Write `wiki/entities/meridian-markets.md`**
+- [x] **Step 1: Write `wiki/entities/meridian-markets.md`**
 
 ```markdown
 # Meridian Markets
@@ -319,7 +319,7 @@ been slower to find their footing. See
 [[entities/dana-okafor]], VP of Operations.
 ```
 
-- [ ] **Step 2: Verify citation and wikilinks are present**
+- [x] **Step 2: Verify citation and wikilinks are present**
 
 Run: `grep -n "^Source:" wiki/entities/meridian-markets.md`
 Expected: `Source: [[sources/client-brief]]`
@@ -327,7 +327,7 @@ Expected: `Source: [[sources/client-brief]]`
 Run: `grep -c '\[\[' wiki/entities/meridian-markets.md`
 Expected: `4` or more
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add wiki/entities/meridian-markets.md
@@ -351,7 +351,7 @@ Claude-Session: https://claude.ai/code/session_01T9eZvM5nj7UcD4rNBZSzoz"
 - Consumes: `[[sources/client-brief]]`, `[[entities/meridian-markets]]` (Tasks 2, 4).
 - Produces: `[[concepts/prepared-foods-positioning]]`, referenced by Tasks 2, 3, 4, 9.
 
-- [ ] **Step 1: Write `wiki/concepts/prepared-foods-positioning.md`**
+- [x] **Step 1: Write `wiki/concepts/prepared-foods-positioning.md`**
 
 ```markdown
 # Prepared foods positioning
@@ -378,7 +378,7 @@ or how it performs relative to other categories. See
 [[analyses/open-questions]].
 ```
 
-- [ ] **Step 2: Verify citation and wikilinks are present**
+- [x] **Step 2: Verify citation and wikilinks are present**
 
 Run: `grep -n "^Source:" wiki/concepts/prepared-foods-positioning.md`
 Expected: `Source: [[sources/client-brief]]`
@@ -386,7 +386,7 @@ Expected: `Source: [[sources/client-brief]]`
 Run: `grep -c '\[\[' wiki/concepts/prepared-foods-positioning.md`
 Expected: `2` or more
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add wiki/concepts/prepared-foods-positioning.md
@@ -410,7 +410,7 @@ Claude-Session: https://claude.ai/code/session_01T9eZvM5nj7UcD4rNBZSzoz"
 - Consumes: `[[sources/client-brief]]`, `[[entities/meridian-markets]]` (Tasks 2, 4).
 - Produces: `[[concepts/loyalty-program]]`, referenced by Tasks 2, 3, 4, 9.
 
-- [ ] **Step 1: Write `wiki/concepts/loyalty-program.md`**
+- [x] **Step 1: Write `wiki/concepts/loyalty-program.md`**
 
 ```markdown
 # Loyalty program
@@ -442,7 +442,7 @@ See [[analyses/open-questions]] — including whether aggregated loyalty
 metrics (e.g., average spend per segment) are Restricted or Open.
 ```
 
-- [ ] **Step 2: Verify citation, wikilinks, and the data-safety note are present**
+- [x] **Step 2: Verify citation, wikilinks, and the data-safety note are present**
 
 Run: `grep -n "^Source:" wiki/concepts/loyalty-program.md`
 Expected: `Source: [[sources/client-brief]]`
@@ -450,7 +450,7 @@ Expected: `Source: [[sources/client-brief]]`
 Run: `grep -n "Restricted" wiki/concepts/loyalty-program.md`
 Expected: at least one match, confirming the data-handling note is present.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add wiki/concepts/loyalty-program.md
@@ -474,7 +474,7 @@ Claude-Session: https://claude.ai/code/session_01T9eZvM5nj7UcD4rNBZSzoz"
 - Consumes: `[[sources/client-brief]]`, `[[entities/meridian-markets]]` (Tasks 2, 4).
 - Produces: `[[concepts/store-expansion-strategy]]`, referenced by Tasks 2, 3, 4, 9.
 
-- [ ] **Step 1: Write `wiki/concepts/store-expansion-strategy.md`**
+- [x] **Step 1: Write `wiki/concepts/store-expansion-strategy.md`**
 
 ```markdown
 # Store expansion strategy
@@ -511,7 +511,7 @@ data types. See `docs/data-handling-checklist.md`.
 See [[analyses/open-questions]] and [[analyses/interview-prep]].
 ```
 
-- [ ] **Step 2: Verify citation and wikilinks are present**
+- [x] **Step 2: Verify citation and wikilinks are present**
 
 Run: `grep -n "^Source:" wiki/concepts/store-expansion-strategy.md`
 Expected: `Source: [[sources/client-brief]]`
@@ -519,7 +519,7 @@ Expected: `Source: [[sources/client-brief]]`
 Run: `grep -c '\[\[' wiki/concepts/store-expansion-strategy.md`
 Expected: `4` or more
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add wiki/concepts/store-expansion-strategy.md
@@ -544,7 +544,7 @@ Claude-Session: https://claude.ai/code/session_01T9eZvM5nj7UcD4rNBZSzoz"
 - Consumes: `[[concepts/loyalty-program]]`, `[[concepts/store-expansion-strategy]]`, `[[concepts/prepared-foods-positioning]]`, `[[sources/client-brief]]` (Tasks 2, 5, 6, 7); the 4 existing questions currently in `docs/data-handling-checklist.md`.
 - Produces: `[[analyses/open-questions]]`, referenced by Task 9 and by every entity/concept page above.
 
-- [ ] **Step 1: Write `wiki/analyses/open-questions.md`**
+- [x] **Step 1: Write `wiki/analyses/open-questions.md`**
 
 ```markdown
 # Open questions for Dana
@@ -588,7 +588,7 @@ Source: [[sources/client-brief]], [[concepts/store-expansion-strategy]],
   would that require additional mapping?
 ```
 
-- [ ] **Step 2: Verify both sections and the migrated items are present**
+- [x] **Step 2: Verify both sections and the migrated items are present**
 
 Run: `grep -c "^## " wiki/analyses/open-questions.md`
 Expected: `2` (Data classification, Business context)
@@ -596,7 +596,7 @@ Expected: `2` (Data classification, Business context)
 Run: `grep -c "^- " wiki/analyses/open-questions.md`
 Expected: `10` (4 data-classification questions + 6 business-context questions)
 
-- [ ] **Step 3: Replace the open-questions section in the checklist**
+- [x] **Step 3: Replace the open-questions section in the checklist**
 
 In `docs/data-handling-checklist.md`, replace this entire block (currently
 the last section of the file, starting at `## Open questions for Dana`):
@@ -624,7 +624,7 @@ Tracked in the research wiki: see
 [wiki/analyses/open-questions.md](../wiki/analyses/open-questions.md).
 ```
 
-- [ ] **Step 4: Verify the checklist no longer duplicates the list**
+- [x] **Step 4: Verify the checklist no longer duplicates the list**
 
 Run: `grep -c "Raw (unaggregated) POS" docs/data-handling-checklist.md`
 Expected: `0` (the duplicated question text is gone)
@@ -632,7 +632,7 @@ Expected: `0` (the duplicated question text is gone)
 Run: `grep -n "wiki/analyses/open-questions.md" docs/data-handling-checklist.md`
 Expected: one match, the new pointer link.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add wiki/analyses/open-questions.md docs/data-handling-checklist.md
@@ -656,7 +656,7 @@ Claude-Session: https://claude.ai/code/session_01T9eZvM5nj7UcD4rNBZSzoz"
 - Consumes: `[[entities/dana-okafor]]`, `[[entities/meridian-markets]]`, `[[concepts/store-expansion-strategy]]`, `[[concepts/prepared-foods-positioning]]`, `[[concepts/loyalty-program]]`, `[[analyses/open-questions]]` (Tasks 3, 4, 5, 6, 7, 8).
 - Produces: `[[analyses/interview-prep]]`, the main deliverable of this pass — referenced by Task 10's index.
 
-- [ ] **Step 1: Write `wiki/analyses/interview-prep.md`**
+- [x] **Step 1: Write `wiki/analyses/interview-prep.md`**
 
 ```markdown
 # Interview prep: Dana Okafor
@@ -726,7 +726,7 @@ Operations.
   loyalty/labor data can be treated as Open.
 ```
 
-- [ ] **Step 2: Verify all seven agenda sections and the citation are present**
+- [x] **Step 2: Verify all seven agenda sections and the citation are present**
 
 Run: `grep -n "^Source:" wiki/analyses/interview-prep.md`
 Expected: one match listing all six cited pages.
@@ -734,7 +734,7 @@ Expected: one match listing all six cited pages.
 Run: `grep -c "^### " wiki/analyses/interview-prep.md`
 Expected: `7`
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add wiki/analyses/interview-prep.md
@@ -760,7 +760,7 @@ Claude-Session: https://claude.ai/code/session_01T9eZvM5nj7UcD4rNBZSzoz"
 - Consumes: every page produced in Tasks 2–9.
 - Produces: the three wiki-wide pages that close out this ingest pass.
 
-- [ ] **Step 1: Write `wiki/index.md`**
+- [x] **Step 1: Write `wiki/index.md`**
 
 ```markdown
 # Wiki index
@@ -799,7 +799,7 @@ spec.
   Dana Okafor stakeholder interview.
 ```
 
-- [ ] **Step 2: Write `wiki/log.md`**
+- [x] **Step 2: Write `wiki/log.md`**
 
 ```markdown
 # Wiki log
@@ -819,7 +819,7 @@ Restricted data was ingested — the client brief is the only source, and
 it's not customer, employee, loyalty, or labor data.
 ```
 
-- [ ] **Step 3: Write `wiki/overview.md`**
+- [x] **Step 3: Write `wiki/overview.md`**
 
 ```markdown
 # Overview
@@ -853,7 +853,7 @@ with that constraint in mind — get the highest-value context from Dana
 now, while the NDA and data extract are still in progress.
 ```
 
-- [ ] **Step 4: Verify no source is missing from the index and every wikilink target exists**
+- [x] **Step 4: Verify no source is missing from the index and every wikilink target exists**
 
 Run:
 ```bash
@@ -871,7 +871,7 @@ done
 ```
 Expected: no output (every `[[wikilink]]` in the wiki resolves to a real file — none are expected to dangle, since this is a closed first pass with no pages left un-created).
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add wiki/index.md wiki/log.md wiki/overview.md
@@ -888,5 +888,5 @@ Claude-Session: https://claude.ai/code/session_01T9eZvM5nj7UcD4rNBZSzoz"
 
 ## Final check across the whole plan
 
-- [ ] Every file listed in the spec's "Initial content" section exists: `CLAUDE.md`, `wiki/index.md`, `wiki/log.md`, `wiki/overview.md`, `wiki/sources/client-brief.md`, `wiki/entities/dana-okafor.md`, `wiki/entities/meridian-markets.md`, `wiki/concepts/prepared-foods-positioning.md`, `wiki/concepts/loyalty-program.md`, `wiki/concepts/store-expansion-strategy.md`, `wiki/analyses/open-questions.md`, `wiki/analyses/interview-prep.md`, and the edit to `docs/data-handling-checklist.md`.
-- [ ] `git log --oneline -10` shows one commit per task (10 commits total), each scoped to only the files that task touched.
+- [x] Every file listed in the spec's "Initial content" section exists: `CLAUDE.md`, `wiki/index.md`, `wiki/log.md`, `wiki/overview.md`, `wiki/sources/client-brief.md`, `wiki/entities/dana-okafor.md`, `wiki/entities/meridian-markets.md`, `wiki/concepts/prepared-foods-positioning.md`, `wiki/concepts/loyalty-program.md`, `wiki/concepts/store-expansion-strategy.md`, `wiki/analyses/open-questions.md`, `wiki/analyses/interview-prep.md`, and the edit to `docs/data-handling-checklist.md`.
+- [x] `git log --oneline -10` shows one commit per task (10 commits total), each scoped to only the files that task touched.

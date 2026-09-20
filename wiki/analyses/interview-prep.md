@@ -65,6 +65,17 @@ Operations.
   Meridian's own — does Dana see this as validation of Meridian's
   positioning, or new competitive pressure? See
   [[concepts/grocery-industry-trends]].
+- National new-store growth in 2025 concentrated in the Southeast and
+  Mid-Atlantic, not Southern California — does Dana have a view on how
+  the Pasadena submarket compares to what's driving growth elsewhere?
+- Does Meridian track private-label mix or offer online/delivery ordering
+  today? Both are reshaping the national market and may be worth including
+  in the dashboard scope.
+- Bristol Farms is opening new LA stores on prepared-foods/small-format
+  terms similar to Meridian's — is Bristol Farms (or Erewhon) on Dana's
+  radar as a competitor in any current or prospective trade area, and
+  where does Meridian see its own pricing relative to them? See
+  [[entities/bristol-farms]], [[entities/erewhon]].
 
 ### 8. Data handling / NDA
 

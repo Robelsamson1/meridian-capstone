@@ -41,3 +41,23 @@ Source: [[sources/client-brief]], [[concepts/store-expansion-strategy]],
   investing in smaller-footprint formats similar to Meridian's own (see
   [[concepts/grocery-industry-trends]]) — does Dana see this as a tailwind
   Meridian is capturing, or new competitive pressure on its differentiation?
+- National new-store growth in 2025 clustered heavily in the Southeast and
+  Mid-Atlantic, outside Meridian's LA/Orange/Ventura footprint — does
+  Meridian have any read on how the Pasadena submarket specifically
+  compares to peer sites nationally, beyond the general tailwind?
+- Rising private-label penetration (21%+ of national grocery spend) and
+  more frequent/smaller "bite-sized" shopping trips are reshaping consumer
+  behavior nationally — does Meridian track private-label mix or basket
+  size/frequency today, and would that be part of the requested dashboard?
+- Does Meridian offer any online/delivery ordering today? Home delivery is
+  now 45% of online grocery orders nationally, which is starting to
+  reshape what grocery real estate needs to support — worth knowing before
+  finalizing a Pasadena site brief.
+- [[entities/bristol-farms]] is actively opening new LA stores on
+  similar prepared-foods/small-format terms to Meridian — does Dana see
+  Bristol Farms (or [[entities/erewhon]]) as a direct competitor in any of
+  Meridian's current or prospective (Pasadena) trade areas?
+- Where does Meridian's own prepared-foods pricing sit relative to
+  premium (Erewhon) and mid-market (Bristol Farms) LA specialty grocers —
+  is Meridian positioned as the value option, the premium option, or
+  something else?
